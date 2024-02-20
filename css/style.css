@@ -1,0 +1,427 @@
+.my-custom-font {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    background-color: rgb(32, 56, 80)
+  }
+.btn-info{
+    background-color: rgb(59, 110, 160) !important;
+    color: rgb(221, 217, 217);
+    border-color:rgb(32, 56, 80) ; 
+}
+.btn-info:hover {
+    border-color: rgb(32, 56, 80) !important;
+}
+.brand-name{
+    font-size: 1.7rem !important; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color:  rgb(59, 110, 160) !important;
+}
+.nav-bar-style , .drop-da{
+    background-color: rgb(27, 26, 26) !important;
+}
+.search-btn:focus , .search-btn:hover{
+background-color:rgb(59, 110, 160) !important ;
+color: white !important;
+border-color:rgb(32, 56, 80) ;
+}
+.search-btn{
+    border-color:rgb(71, 125, 179) ;
+    color: rgb(59, 110, 160)
+}
+.input-focus:focus{
+    box-shadow: 0px 0px  1px 1px rgb(59, 110, 160) !important;   
+    border: 2px solid rgb(59, 110, 160) !important;
+}
+.nav-link:hover {
+    color: rgb(59, 110, 160) !important;
+}
+.nav-linkk {
+    color: rgb(241, 242, 243) !important;
+}
+.nav-linkk:active , .nav-linkk:hover{
+background-color: rgb(32, 56, 80);
+color: white;
+}
+.nav_drop:hover , .nav_drop:focus {
+        border: 2px solid rgb(59, 110, 160) !important;
+        border-radius: 5px;
+        color: rgb(59, 110, 160) !important;
+}
+.caption-slide{
+    background-color: rgba(0, 0, 0,0.5);
+    width: 60% !important;
+    margin: auto;
+}
+.modal1-btn{
+    background-color: rgb(59, 110, 160) !important;
+    color: white;
+    border:rgb(32, 56, 80) ;
+}
+ .modal1-btn-btn:hover , .modal1-btn:focus{
+    background-color:rgb(35, 64, 94) !important ;
+    color: white !important;
+
+    }
+.sec-2btn{
+    width: 200px;
+    border-radius: 10px;
+}
+.all{
+    background-color: rgb(27, 26, 26);
+}
+.all3{
+    color: aliceblue;
+    background-color: rgb(35, 35, 37) ;
+}
+.collapse-font{
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 200px;
+}
+.mkm{
+text-align: center;
+}
+@media(max-width : 992px){
+.mkm{
+padding-left: 0px ;
+}
+}
+.translation{
+    width: 100%;
+    background-color: rgb(204, 223, 235)
+}
+.translation::placeholder{
+    color: rgb(44, 42, 42);
+}
+.copy-link , .copy-link:hover {
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+}
+.photoback{
+    background-image: url(../images/wallpaperback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
+}
+.photoback2{
+    background-image: url(../images/back2.jpg);
+    background-size: cover;
+}
+.card-style{
+    background-color:rgb(27, 26, 26) ;
+    color: rgb(230, 226, 226);
+    box-shadow: 1px 1px  2px 2px rgb(40, 38, 38)   ;
+    position: relative;
+    transform: scale3d(1,1,1);
+    transition: 0.7s;
+
+}
+.card-style:hover{
+    transform: scale3d(1.1,1.1,1);
+    /* color: rgb(21, 20, 20); */
+    box-shadow: 1px 1px  2px 2px rgba(68, 115, 149, 0.5)  ;
+    border: none;
+}
+.card-style::after{
+    position: absolute;
+    content: "";
+
+    width: 0%;
+    height: 0%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    
+    background-color: rgba(68, 115, 149, 0.6) ;
+    visibility: hidden;
+    transition: 0.7s;
+}
+.card-style:hover::after{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+.btn:hover{
+    color: black;
+}
+.card-style::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(68, 115, 149, 0.5);
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card-style:hover::before{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+.team{
+    transform: scale3d(1,1,1);
+    transition: 0.5s;
+    height: 430px;
+    position: relative;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+.team:hover{
+    transform: scale3d(0.9,0.9,1);
+}
+.team:hover .card-img-overlay{
+    background: -webkit-linear-gradient( top , rgba(29, 27, 59, 0.5), rgba(70, 68, 68, 0.6)) ;
+}
+.card-img-overlay{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.small-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 30% ;
+    margin-top: 220px;
+    background-size: cover;
+}
+.pic1{
+    background-image: url(../images/dev1.jpg);
+}
+.pic2{
+    background-image: url(../images/dev4.jpg);
+}
+.pic3{
+    background-image: url(../images/dev2.jpg);
+}
+.icon-dev{
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-bottom: -10px;
+    margin-left: 220px
+}
+.inst:hover{
+    color:#de4c90;
+}
+.dev-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.news{
+    width: 90%;
+    height: 460px;
+    box-shadow: 0px 0px  3px 4px rgba(70, 67, 67, 0.5)  ;
+    position: relative;
+    background-color:rgb(35, 35, 37)  ;
+    color: rgb(255, 236, 236);
+    transform: scale3d(1,1,1);
+    transition: 0.5s;
+}
+.news:hover{
+    transform: scale3d(1.02,1.02,1);
+}
+.news-photo{
+        width: 360px;
+        height:460px;
+        float: right;
+        margin-bottom: 15px;
+        background-size: cover;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
+    }
+    .news1{
+    background-image: url(../images/paris-news.jpg);
+}
+.news2{
+    background-image: url(../images/city2.jpg);
+}
+.news3{
+    background-image: url(../images/city3.jpg);
+}
+.news4{
+    background-image: url(../images/city4.jpg);
+}
+
+
+.news-photo2{
+ clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 70% 100%);   
+}
+.container{
+    padding-right: var(--bs-gutter-x, 0rem);   
+    padding-left: var(--bs-gutter-x, 0rem);
+}
+@media(max-width : 786px)  {
+    .news-photo{
+        width: 100%;
+        height:45%;
+        background-size: cover;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .news1{
+        background-image: url(../images/paris-news.jpg);
+    }
+    .news2{
+        background-image: url(../images/city2.jpg);
+    }
+    .news3{
+        background-image: url(../images/city3.jpg);
+    }
+    .news4{
+        background-image: url(../images/city4.jpg);
+    }
+    .news{
+    overflow:auto;
+}
+.content{
+    margin-left: 0;
+}
+.caption-slide{
+    background-color: rgba(0, 0, 0,0.5);
+    width: 100% !important;
+}
+
+}
+.line2{
+    left: 10px;
+}
+.news:hover  .line::after{
+    width: 10%;
+    height: 5px;
+    transform: scale3D(1.2,1,1);
+}
+.news-parag{
+    margin-top: 30px;
+    width: 80%;
+}
+.line{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 30px
+}
+.line::after{
+    position: absolute;
+    content: "" ;
+    width: 5%;
+    height: 5px;
+    border-radius: 5px;
+    bottom: 0;
+    transform: scale3D(1,1,1);
+    background-color:white;
+    transition: 0.3s;
+}
+.join-us{
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px  5px 5px rgb(78, 109, 137) !important; 
+    text-align: center;  
+    background-color:rgb(159, 210, 255);
+    transform: scale3d(1,1,1);
+    transition: 0.5s;
+}
+.join-us:hover{
+    transform: scale3d(1.05,1.05,1);
+}
+.icon-format{
+    text-align: center;  
+    font-size: 6rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
+}
+.join-us a{
+    text-decoration: none;
+    color:rgb(34, 34, 34)
+}
+.footer{
+    background-color:rgb(34, 34, 34);
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin: 20px 0px;
+    margin-left: 100px;
+}
+.footer-titles{
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+.foot-para{
+    text-align: center;
+    font-weight: bold;
+}
+.footer-link , .footer-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.content1{ 
+    height: auto;
+    width: 400px;
+    position: relative;
+    border-bottom: 3px solid rgb(93, 90, 90);
+}
+.borderd{
+    margin: 20px 0;
+    border-top: 3px solid rgb(93, 90, 90);
+}
+.circ1{
+    background-image: url(../images/footlogo2.jpg);
+    background-size: cover;
+}
+.circ2{
+    background-image: url(../images/footlogo4.jpg);
+    background-size: cover;
+}
+.circ3{
+    background-image: url(../images/footlogo3.jpg);
+    background-size: cover;
+}
+@media(max-width : 786px)  {
+    .calendar{
+        margin-left: 40px !important;
+    }
+
+    .borderd{
+        border-top: 0px solid rgb(93, 90, 90);
+        margin: 0px 0px;
+    }
+    .content1{ 
+       margin-bottom: 10px;
+    }
+    .second{
+        order: 1 ;
+    }
+    .second-tex{
+        order: 2;
+    }
+    .third{
+        order: 3;
+    }
+    .fourth{
+        order: 4;
+    }
+}
+.copy-right{
+    margin-top: 30px;
+    height: 60px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    order: 6;
+}
+.copy-right span{
+    color:rgb(154, 189, 223);
+}

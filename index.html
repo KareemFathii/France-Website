@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FranceTraveler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body class="my-custom-font" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50"> 
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark nav-bar-style">
+        <div class="container-fluid">
+
+             <a href="#"> <img src="images/logo1.jpg" class="rounded-circle mx-4" alt="france-logo" height="80px" width="80px"> </a>
+          <a class="navbar-brand brand-name ms-1 me-5" href="#">Traveler</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section2">about</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link nav_drop mx-2 dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cities
+                </a>
+                <ul class="dropdown-menu drop-da" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Paris</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Marseille</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Lyon</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Nice</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Toulouse</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Lille</a></li>
+                  <li><a class="dropdown-item nav-linkk"  href="#section4">Strasbourg</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#section3">Translation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#section5 ">News</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input id="searchInput" class="form-control me-3 input-focus" type="search" placeholder="Search" aria-label="Search">
+              <button  class="btn btn-outline-info search-btn" id="searchButton"  type="button">Search</button>
+              <button class="btn btn-outline-info search-btn ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="bg-dark text-white" action="">
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+            <div class="modal-header " >
+              <h3 style="font-family:Arial, Helvetica, sans-serif;">Login</h3>
+              <button type="button" class="btn-close modal1-btn d-flex justify-content-between" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            </div>
+            <div class="modal-body">
+            
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                  <input type="email" class="form-control input-focus" id="exampleInputEmail1" style="background-color:rgb(211, 207, 207);" placeholder="Enter Email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control input-focus" style="background-color:rgb(211, 207, 207);"  placeholder="Ener Password" id="exampleInputPassword1">
+                </div>
+                <div class="form-check form-switch ">
+                  <input class="form-check-input  modal1-btn" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label " for="flexSwitchCheckChecked">Remember me </label>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
+                <button type="submit" class="btn btn-info  modal1-btn">Submit</button>
+                <button type="close" class="btn btn-info modal1-btn">Close</button>
+              </div>
+                
+          </form>
+    
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ---------------------------------------------------------carousel------------------------------------------------------------------------>
+      <div id="carouselExampleDark" class="carousel carousel-light slide"  style="height:675px;"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+        </div>
+        <div class="carousel-inner " style="height: 100vh;" >
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/slide1.jpg" class="d-block w-100" height="700" alt="paris">
+            <div class="carousel-caption  d-md-block">
+              <div class="p-2 caption-slide text-white rounded" >
+                <h1>Paris</h1>  
+                <p> The romantic Capital of France,</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/fourth.jpg" class="d-block w-100"  height="700"  alt="lyon">
+            <div class="carousel-caption d-md-block">
+              <div class=" p-2 caption-slide text-white rounded">
+                <h1 class="title-caption" >Mont Saint-Michel </h1>
+                <p>Stunning Gothic architecture in France</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/slide2.jpg" class="d-block w-100"   height="700" alt="paris">
+            <div class="carousel-caption d-md-block">
+              <div class=" p-2  caption-slide text-white rounded">
+                <h1 class="title-caption" >Lyon</h1>
+                <p>France's gastronomic capital</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="images/fifth.jpg" class="d-block w-100"   height="700" alt="paris">
+            <div class="carousel-caption  d-md-block">
+              <div class=" p-2  caption-slide text-white rounded">
+                <h1 class="title-caption" >Arch De Triomphe</h1>
+                <p>The iconic monument in Paris</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      <div class=" mt-2 p-5 text-white " id="section2" style="background-color: rgb(27, 26, 26)">
+        <h2>Welcome</h2>
+        <p class="mt-3">Welcome to our France Traveler's Haven, where every cobblestone
+           street tells a story and every vineyard beckons with promise. From the timeless allure of Paris to the sun-kissed shores of the French Riviera
+           , immerse yourself in the charm, culture, and culinary delights of this diverse nation. Let our expertly crafted guides lead you on a journey through historic landmarks, hidden gems
+           , and gastronomic adventures
+          , ensuring your exploration of France is filled with unforgettable moments and cherished memories.</p>
+        <a href="#">  <button type="button" class="btn btn-lg btn-info sec-2btn mt-2 " >Read More</button></a> 
+        <!-- <button type="button" class="btn btn-lg btn-outline-danger">Danger</button> -->
+      </div>
+      <!-- <div class=" dropdown-divider  mt-2 " style="background-color: rgb(29, 27, 27);"> -->
+
+      </div>
+
+      <div class="  my-1 p-4 text-white rounded" style="background-color: rgb(27, 26, 26)">
+        <h1 class=" mkm">Popular Destinations in France</h1>
+      </div>
+
+      <div id="accordion">
+
+        <div class=" card p-1 all">
+          <div class="card-header " style="background-color: rgb(27, 26, 26)">
+            <a class="btn btn-info ms-2 collapse-font" data-bs-toggle="collapse" href="#collapseOne">
+              Paris city
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body all3">
+              The City of Light, exudes timeless elegance with its iconic landmarks like the Eiffel Tower, Notre-Dame Cathedral, and Louvre Museum. Its romantic ambiance, charming neighborhoods, and world-class cuisine make it a dream destination for travelers seeking art, culture, and unparalleled sophistication.
+            </div>
+          </div>
+        </div>
+      
+        <div class="  card p-1 all">
+          <div class="card-header" style="background-color: rgb(27, 26, 26)" >
+            <a class="collapsed btn btn-info ms-2 collapse-font" data-bs-toggle="collapse" href="#collapseTwo">
+              Marseille city
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body all3">
+              France's oldest city, captivates visitors with its vibrant Mediterranean atmosphere, bustling Old Port, and rich cultural tapestry. From historic landmarks like the Notre-Dame de la Garde basilica to the lively markets and diverse culinary scene, Marseille offers a dynamic blend of tradition and modernity. 
+            </div>
+          </div>
+        </div>
+      
+        <div class=" card p-1 all">
+          <div class="card-header" style="background-color: rgb(27, 26, 26)">
+            <a class="collapsed btn btn-info ms-2 collapse-font" data-bs-toggle="collapse" href="#collapseThree">
+              Lyon city
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body all3">
+              France's gastronomic capital, enchants visitors with its picturesque Renaissance architecture, vibrant culinary scene, and UNESCO-listed Old Town. From the majestic Fourvière Basilica to the bustling traboules (hidden passageways), Lyon's rich history and cultural heritage offer a captivating blend of tradition and innovation.
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <!-- first translation -->
+
+      <div class="  my-1 p-4 text-white rounded" id="section3" style="background-color: rgb(27, 26, 26);">
+        <h1 class="mkm">Translation from Arabic to French</h1>
+      </div>
+
+      <div class="  p-4 text-white rounded" style="background-color: rgb(27, 26, 26)">
+        <p class=" mx-2 translate">Write and translate <a  href="#" class=" copy-link" > Press Here</a> </p>
+        <button type="button" class="mx-2  btn btn-info px-3 py-2" id="my-button"  data-bs-toggle="tooltip" >Copy</button>
+        <br>
+        <textarea class=" mx-2 my-4 rounded translation" name="textarea1" id="textID" placeholder="Enter your translation :" cols="60" rows="5"></textarea>
+      </div>
+
+
+
+<!-- Modal -->
+<div class="modal  fade" id="Modal_click" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content bg-dark text-white ">
+
+      <div class="modal-body">
+        <div class="d-flex justify-content-between">
+          <p class="d-flex justify-content-between " id="exampleModalLabel">www.FranceTraveler.com says...</p>
+          <!-- <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+    
+        copied successfully
+        <button type="button" class="btn btn-info d-block mt-4" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- second translation -->
+
+ <div class=" my-1 p-4 text-white rounded" style="background-color: rgb(27, 26, 26);">
+  <h1 class="mkm">Translation from French to Arabic</h1>
+</div>
+
+<div class="  p-4 text-white rounded" style="background-color: rgb(27, 26, 26)">
+  <p class=" mx-2 translate">Write and translate <a  href="#" class=" copy-link" > Press Here</a> </p>
+  <button type="button" class="mx-2  btn btn-info px-3 py-2" id="my-button2"  data-bs-toggle="tooltip" >Copy</button>
+  <br>
+  <textarea class=" mx-2 my-4 rounded translation" name="textarea1" id="textID" placeholder="Enter your translation :" cols="60" rows="5"></textarea>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal  fade" id="Modal_click2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog ">
+<div class="modal-content bg-dark text-white ">
+
+<div class="modal-body">
+  <div >
+    <p class="d-flex justify-content-between " id="exampleModalLabel">www.FranceTraveler.com says...</p>
+  </div>
+
+  copied successfully
+  <button type="button" class="btn btn-info d-block mt-4" data-bs-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
+</div>
+
+
+ <!-- third translation -->
+
+ <div class="  my-1 p-4 text-white rounded" style="background-color: rgb(27, 26, 26);">
+  <h1 class="mkm">Translation from French to English</h1>
+</div>
+
+<div class="  p-4 text-white rounded" style="background-color: rgb(27, 26, 26)">
+  <p class=" mx-2 translate">Write and translate <a  href="#" class=" copy-link" > Press Here</a> </p>
+  <button type="button" class="mx-2  btn btn-info px-3 py-2" id="my-button3"  data-bs-toggle="tooltip" >Copy</button>
+  <br>
+  <textarea class=" mx-2 my-4 rounded translation" name="textarea1" id="textID" placeholder="Enter your translation :" cols="60" rows="5"></textarea>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal  fade" id="Modal_click3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog ">
+<div class="modal-content bg-dark text-white ">
+
+<div class="modal-body">
+  <div class="d-flex justify-content-between">
+    <p class="d-flex justify-content-between " id="exampleModalLabel">www.FranceTraveler.com says...</p>
+    <!-- <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button> -->
+  </div>
+
+  copied successfully
+  <button type="button" class="btn btn-info d-block mt-4" data-bs-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="my-2 rounded photoback">
+</div>
+
+<div class=" mx-1 my-2 p-4 text-white rounded"  id="section4" style="background-color: rgb(27, 26, 26);">
+  <h1 class="mkm">Cities Of France </h1>
+</div>
+
+<div class=" mt-5 d-flex justify-content-around  row row-cols-lg-auto">
+
+
+  
+  <div class="mb-5 card card-style" style="width:370px">
+    <img class="card-img-top" src="images/city1.jpg"  height="200" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Paris</h4>
+      <p class="card-text">City of Romance and Timeless Elegance</p>
+      <a href="#" class="btn btn-info  float-end">More</a>
+    </div>
+  </div>
+  
+  <div class="mb-5 card card-style " style="width:370px">
+    <img class="card-img-top" src="images/city2.jpg" height="200" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Marseille</h4>
+    <p class="card-text">Mediterranean Marvels and Cultural Charms</p>
+    <a href="#" class="btn btn-info float-end">More</a>
+  </div>
+</div>
+
+<div class=" mb-5 card card-style  " style="width:370px">
+  <img class="card-img-top" src="images/city3.jpg" height="200" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Lyon</h4>
+    <p class="card-text">Gastronomic Capital and Renaissance Splendor</p>
+    <a href="#" class="btn btn-info float-end">More</a>
+  </div>
+</div>
+
+</div> <!-- sss -->
+
+<div class="  d-flex justify-content-around  row row-cols-lg-auto">
+
+
+  
+  <div class=" mb-5 card card-style  " style="width:370px">
+    <img class="card-img-top" src="images/city4.jpg" height="200" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Nice</h4>
+      <p class="card-text">French Riviera Bliss and Mediterranean Beauty</p>
+      <a href="#" class="btn btn-info  float-end">More</a>
+    </div>
+  </div>
+  
+  <div class=" mb-5 card card-style  " style="width:370px">
+    <img class="card-img-top" src="images/city5.jpg" height="200" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Toulouse</h4>
+    <p class="card-text">Rose-Colored Skies and Aerospace Wonders</p>
+    <a href="#" class="btn btn-info float-end">More</a>
+  </div>
+</div>
+
+<div class=" mb-5 card card-style  " style="width:370px">
+  <img class="card-img-top" src="images/city6.jpg" height="200" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Bordeaux</h4>
+    <p class="card-text">Wine Capital and Architectural Grandeur</p>
+    <a href="#" class="btn btn-info float-end">More</a>
+  </div>
+</div>
+
+</div> <!-- sss -->
+
+
+<div class=" d-flex justify-content-around  row row-cols-lg-auto">
+
+  <div class=" mb-5 card  card-style " style="width:370px">
+    <img class="card-img-top" src="images/city7.jpg" height="200" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Lille</h4>
+      <p class="card-text">Northern Gem and Lively Cultural Hub</p>
+      <a href="#" class="btn btn-info float-end">More</a>
+    </div>
+  </div>
+  
+  <div class=" mb-5 card card-style " style="width:370px">
+    <img class="card-img-top" src="images/thiird.jpg" height="200" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Strasbourg</h4>
+    <p class="card-text">Alsatian Charms and European Elegance</p>
+    <a href="#" class="btn btn-info float-end">More</a>
+  </div>
+</div>
+
+</div> <!-- sss -->
+
+<div class="my-2 rounded photoback photoback2">
+</div>
+
+<div class=" mx-1 my-2 p-4 text-white rounded" style="background-color: rgb(27, 26, 26);">
+  <h1 class="mkm">Developer Team </h1>
+</div>
+
+<div class=" mt-5 d-flex justify-content-evenly rounded row row-cols-lg-auto">
+
+  <div class="col d-flex justify-content-evenly ">
+
+  <div class=" mb-5 card team" style="width: 380px">
+    <img class="card-img-top" src="images/dev1.jpg" height="429" width="350" alt="Card image">
+    <div class="card-img-overlay">
+      <a href="#" class="icon-dev"> <i class="fab fa-linkedin " ></i>    </a>
+      <a href="#" class="icon-dev inst"> <i class="fab fa-instagram-square "></i></a>
+      <div class=" mx-2  small-pic pic1"></div>
+      <p class="dev-title">Eng. Mark steven</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="col d-flex justify-content-evenly ">
+
+  <div class=" mb-5 card team" style="width: 380px">
+    <img class="card-img-top" src="images/dev4.jpg" height="429" width="350" alt="Card image">
+    <div class="card-img-overlay">
+      <a href="#" class="icon-dev"> <i class="fab fa-linkedin " ></i>    </a>
+      <a href="#" class="icon-dev inst"> <i class="fab fa-instagram-square "></i></a>
+      <div class=" mx-2  small-pic pic2"></div>
+      <p class="dev-title">Developer : Kareem Mohamed </p>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="col d-flex justify-content-evenly ">
+
+  <div class=" mb-5 card team" style="width: 380px">
+    <img class="card-img-top" src="images/dev2.jpg" height="429" width="350" alt="Card image">
+    <div class="card-img-overlay">
+      <a href="#" class="icon-dev"> <i class="fab fa-linkedin " ></i>    </a>
+      <a href="#" class="icon-dev inst"> <i class="fab fa-instagram-square "></i></a>
+      <div class=" mx-2  small-pic pic3"></div>
+      <p class="dev-title">Developer : Mohamed Ismail </p>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class=" my-2 p-4 text-white rounded" id="section5" style="background-color: rgb(27, 26, 26);">
+  <h1 class="mkm">France Recent News </h1>
+</div>
+
+
+<div class="mt-5 container  rounded news ">
+  <div  class="news-photo news1 img-fluid rounded" alt="newsphoto">  </div>  
+  <div class="content ms-4">
+    <h3 class="ms-4 mb-2 pt-5">Paris News</h3>
+    <i class="fas fa-calendar-alt  ms-4 me-1"></i>
+    <span >SUN,FEB 25th 2024</span>
+    <div class="line"></div>
+    <p class="news-parag ms-4 ">The Eiffel Tower was closed on Monday, February 21, after staff went on strike,
+       unions told Agence France-Presse (AFP). The strike, which was called to protest over the way the monument is managed financially, could be extended, they said. The tower's operator</p>
+      <button type="button" class="btn btn-info ms-4 my-3 text-white">Show More</button>
+    </div>
+    </div>
+  </div>
+  
+  
+  <div class="mt-5 container  rounded news ">
+    <div  class="news-photo news2 news-photo2 float-start img-fluid rounded" alt="newsphoto">  </div>                                                                  
+    <h3 class="ms-4 calendar pt-5">Marseille News</h3>
+    <i class="fas fa-calendar-alt calendar me-1 "></i>
+    <span> WED, FEB 20th 2024</span>
+    <div class="line line2"></div>
+    <p class="news-parag calendar ms-4 ">Gang wars shock EU’s capital as record amount of cocaine seized in Europe , tenetur quidem accusantium quas sequi num`quam  repellendus in pariatur! Deleniti repellendus totam illum eveniet</p>
+      <button type="button" class="btn btn-info calendar ms-2 my-3 text-white">Show More</button>
+    </div>
+  </div>
+  
+
+  <div class="mt-5 container  rounded news ">
+    <div  class="news-photo news3 img-fluid rounded" alt="newsphoto">  </div>  
+    <div class="content ms-4">
+
+      <h3 class="ms-4 pt-5">Lyon News</h3>
+      <i class="fas fa-calendar-alt  ms-4 me-1"></i>
+      <span >SAT, FEB 30th 2024</span>
+      <div class="line"></div>
+      <p class="news-parag ms-4 ">France is a country beloved by millions, but its people have a reputation for perhaps not being the most friendly bunch. A new survey has asked the French what they think of this stereotype and where they think you should visit (and avoid) if you want a warm welcome.</p>
+        <!-- <button type="button" class="btn btn-info ms-4 my-3 text-white"><i class="fas fa-hourglass-start"></i> 1h,30min</button> -->
+        <button type="button" class="btn btn-info ms-4 my-3 text-white">Show More</button>
+      </div>
+        
+      </div>
+    </div>
+    
+
+    <div class="mt-5 container  rounded news ">
+    <div  class="news-photo news4 news-photo2 float-start img-fluid rounded" alt="newsphoto">  </div>                                                                  
+    <h3 class=" calendar pt-5">Lille News </h3>
+    <i class="fas fa-calendar-alt calendar me-1 "></i>
+    <span>MON , MAR 6th 2024</span>
+    <div class="line line2"></div>
+    <p class="news-parag calendar ms-4 "> Aperiam magni laboriosam, rem porro inventore 
+      neque dicta voluptate, tenetur quidem accusantium quas sequi num`quam  repellendus in pariatur! Deleniti repellendus totam illum eveniet.</p>
+      <!-- <button type="button" class="btn btn-info ms-2 my-3 text-white"><i class="fas fa-hourglass-start"></i> 1h,30min</button> -->
+      <button type="button" class="btn btn-info calendar ms-2 my-3 text-white">Show More</button>
+    </div>
+  </div>
+
+
+
+  <div class="  my-4 p-4 text-white rounded" style="background-color: rgb(27, 26, 26);">
+    <h1 class="mkm">Join Us </h1>
+  </div>
+  
+
+  <div class=" my-4 d-flex justify-content-evenly row row-cols-lg-auto">
+      
+      <div class="mb-5 container mx-1 join-us">
+        <h2 class=" mt-4 float-center" style="font-weight: bold;">Follow us</h2>
+        <a href="#" ><i class="fab fa-instagram-square icon-format"></i>  </a> 
+        
+      </div>
+      <div class="mb-5 container mx-1 join-us">
+      <h2 class=" mt-4 float-center" style="font-weight: bold;">Contact us</h2>
+      <a href="#" > <i class="fab fa-whatsapp-square icon-format"></i></a> 
+      
+    </div>
+    <div class="mb-5 container mx-1 join-us">
+      <h2 class=" mt-4 float-center" style="font-weight: bold;">Follow us</h2>
+      <a href="#" ><i class="fab fa-facebook-square icon-format"></i> </a> 
+      
+    </div>
+    <div class=" mb-5 container mx-1 join-us">
+      <h2 class=" mt-4 float-center" style="font-weight: bold;">Subscribe</h2>
+      <a href="#" > <i class="fab fa-youtube icon-format"></i></a> 
+      
+    </div>
+  </div>
+  
+  <div class="mt-2 text-white rounded footer d-flex justify-content-around row row-cols-lg-auto ">
+
+    
+    <div class="content1 borderd ">
+      
+      <div class="footer-titles">Contact links</div>
+      <div class="circle circ1"></div>
+      
+      
+    </div>
+
+    <div class="content1 borderd second">
+      
+      <div class="footer-titles">Company Info</div>
+      <div class="circle circ2"></div>
+     
+    </div>
+
+     <div class="content1 borderd third">
+
+      <div class="footer-titles">Vision</div>
+      <div class="circle circ3"></div>
+     
+    </div>
+
+    <div class="content1">
+      
+      <a href="#" class="footer-link"> <p class="foot-para">Visit us</p> </a> 
+      <a href="#" class="footer-link"><p class="foot-para">Contact Us</p></a>
+      <a href="#" class="footer-link"> <p class="foot-para">Terms of Service</p> </a>
+      
+    </div>
+
+    <div class="content1 second-tex ">
+      
+      <p class="foot-para">Tel : 000-000-000</p>
+      <p class="foot-para">Address : France</p>
+      <p class="foot-para">Fax : 000-000-000</p>
+      
+     
+    </div>
+
+     <div class="content1 fourth">
+
+      <p class="foot-para">Provide Best Service</p>
+      <p class="foot-para">Services for all</p>
+      <p class="foot-para">Privacy Policy</p>
+      
+     
+    </div>
+    
+    <div class="content1 copy-right text-white text-center">
+
+      <span>Copy right &copy; 2024 FranceTraveler.com Rights </span>
+     
+    </div>
+    
+  </div>
+  
+    
+  <!-- el search button -->
+      <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            document.getElementById('searchInput').focus();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<!-- translation1 -->
+<script>
+  // Initialize Modal
+  var myModal = new bootstrap.Modal(document.getElementById('Modal_click'));
+  
+  // Attach event listener to the button to open the modal
+  document.getElementById('my-button').addEventListener('click', function () {
+    // Show the tooltip after click
+    var tooltip = new bootstrap.Tooltip(document.getElementById('my-button'), {
+      title: "Copied",
+      placement: 'right',
+      trigger: 'manual'
+    });
+    tooltip.show();
+    
+    // Open the modal
+    myModal.show();
+    setTimeout(function() {
+      tooltip.dispose();
+    }, 2000); // Hide after 2 seconds
+  });
+</script>
+<!-- translation2 -->
+<script>
+  // Initialize Modal
+  var myModal = new bootstrap.Modal(document.getElementById('Modal_click2'));
+  
+  // Attach event listener to the button to open the modal
+  document.getElementById('my-button2').addEventListener('click', function () {
+    // Show the tooltip after click
+    var tooltip = new bootstrap.Tooltip(document.getElementById('my-button2'), {
+      title: "Copied",
+      placement: 'right',
+      trigger: 'manual'
+    });
+    tooltip.show();
+    
+    // Open the modal
+    myModal.show();
+    setTimeout(function() {
+      tooltip.dispose();
+    }, 2000); // Hide after 2 seconds
+  });
+</script>
+<!-- translation3 -->
+<script>
+  // Initialize Modal
+  var myModal = new bootstrap.Modal(document.getElementById('Modal_click3'));
+  
+  // Attach event listener to the button to open the modal
+  document.getElementById('my-button3').addEventListener('click', function () {
+    // Show the tooltip after click
+    var tooltip = new bootstrap.Tooltip(document.getElementById('my-button3'), {
+      title: "Copied",
+      placement: 'right',
+      trigger: 'manual'
+    });
+    tooltip.show();
+    
+    // Open the modal
+    myModal.show();
+    setTimeout(function() {
+      tooltip.dispose();
+    }, 2000); // Hide after 2 seconds
+  });
+</script>
+
+</body>
+</html>
